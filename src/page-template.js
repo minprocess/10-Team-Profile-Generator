@@ -19,15 +19,15 @@ let jumbotron =
 </div>
 `
 
-    let managerCard =
+    let cards =
   `
   <div class="col-md-4">
-    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-      <div class="card-header">
+    <div class="card mb-3" style="max-width: 18rem;">
+      <div class="card-header text-white bg-primary ">
         <h4 class="card-title">${manager.name}</h4>
         <h5 class="card-title fas fa-mug-hot">Manager</h5>
       </div>
-      <div class="card-body">
+      <div class="card-body bg-white text-black ">
         <p class="card-text">ID: ${manager.id}</p>
         <p class="card-text">Email: ${manager.email}</p>
         <p class="card-text">GitHub: ${manager.officenumber}</p>
@@ -38,15 +38,15 @@ let jumbotron =
     `
 
 for (i=0; i<engineers.length; i++) {
-managerCard += 
+cards += 
 `
 <div class="col-md-4">
-  <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-    <div class="card-header">
+  <div class="card mb-3" style="max-width: 18rem;">
+    <div class="card-header text-white bg-primary ">
       <h4 class="card-title">${engineers[i].name}</h4>
       <h5 class="card-title fas fa-mug-hot">Engineer</h5>
     </div>
-    <div class="card-body">
+    <div class="card-body bg-white text-black">
       <p class="card-text">ID: ${engineers[i].id}</p>
       <p class="card-text">Email: ${engineers[i].email}</p>
       <p class="card-text">GitHub: ${engineers[i].github}</p>
@@ -58,15 +58,15 @@ managerCard +=
 }
 
 for (i=0; i<interns.length; i++) {
-  managerCard += 
+  cards += 
   `
   <div class="col-md-4">
-    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-      <div class="card-header">
+    <div class="card mb-3" style="max-width: 18rem;">
+      <div class="card-header text-white bg-primary ">
         <h4 class="card-title">${interns[i].name}</h4>
         <h5 class="card-title fas fa-mug-hot">Engineer</h5>
       </div>
-      <div class="card-body">
+      <div class="card-body bg-white text-black">
         <p class="card-text">ID: ${interns[i].id}</p>
         <p class="card-text">Email: ${interns[i].email}</p>
         <p class="card-text">GitHub: ${interns[i].school}</p>
@@ -100,7 +100,7 @@ for (i=0; i<interns.length; i++) {
   `
   <div class="row padding">
 `
-+ managerCard +
++ cards +
 
 `
 </div>

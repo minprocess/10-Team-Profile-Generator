@@ -12,14 +12,12 @@
 
 const Employee = require("../lib/Employee");
 
-//const manager = new Manager("Michael Scott", 36284, "mscott@dundermifflin.com", "272-385-3927");
-const name = "Michael Scott";
-const id = 36284;
-const email = "mscott@dundermifflin.com";
+const name = "John";
+const id = 732;
+const email = "john@bigco.com";
 const employee = new Employee(name, id, email);
-
+console.log("typeof", typeOf(employee));
 describe("Employee tests", () => {
-
     test('Can instantiate instance of Employee', () => {
         expect(typeOf(employee)).toBe('object');
     });

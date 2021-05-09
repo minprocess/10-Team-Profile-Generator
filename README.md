@@ -1,4 +1,4 @@
-# <Your-Project-Title>
+# 10-Team-Profile-Generator
 ## Description
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 - What was your motivation?
@@ -12,15 +12,24 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+The .gitignore file should have at least node_modules in it because Inquirer and Jest modules will be kept in the folder 'node_modules'.
+Inquirer and Jest packages need to be installed. At the prompt of a Bash shell type these commands
+npm init -y
+npm i inquirer
+npm i -D jest
+
 ## Usage
+The lib folder contains 4 class definition files. The Manager, Engineer and Intern classes inherit from the Employee test. These classes are used in index.js and have corresponding test files in the folder __tests__. Jest is used to test those classes.
+The team profile is created from the answers to questions asked by the Inquirer package in index.js. To create the team profile web page
+node index
+The file team.html is output to the folder 'dist'.
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
+
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 If you followed tutorials, include links to those here as well.
 ## License
