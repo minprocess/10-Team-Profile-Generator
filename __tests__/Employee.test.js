@@ -16,10 +16,10 @@ const name = "John";
 const id = 732;
 const email = "john@bigco.com";
 const employee = new Employee(name, id, email);
-console.log("typeof", typeOf(employee));
+
 describe("Employee tests", () => {
     test('Can instantiate instance of Employee', () => {
-        expect(typeOf(employee)).toBe('object');
+        expect(typeof(employee)).toBe('object');
     });
 
     test('Can set name via constructor arguments', () => {

@@ -7,10 +7,10 @@
 const Manager = require("../lib/Manager");
 
 //const manager = new Manager("Michael Scott", 36284, "mscott@dundermifflin.com", "272-385-3927");
-const name = "Michael Scott";
+const name = "Mike";
 const id = 36284;
-const email = "mscott@dundermifflin.com";
-const office = "272-385-3927"
+const email = "mike@bigco.com";
+const office = "133"
 const manager = new Manager(name, id, email, office);
 
 describe("Manager tests", () => {

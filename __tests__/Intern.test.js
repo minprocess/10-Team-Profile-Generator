@@ -9,10 +9,9 @@
 
 const Intern = require("../lib/Intern");
 
-// new Intern("Phyllis Smith", 12797, "psmith@dundermifflin.com", "Univ of Pennsylvania")
-const name = "Phyllis Smith";
+const name = "Phyllis";
 const id = 12797;
-const email = "psmith@dundermifflin.com";
+const email = "phyllis@bigco.com";
 const school = "Univ of Pennsylvania";
 const intern = new Intern(name, id, email, school);
 
@@ -22,7 +21,7 @@ describe("Intern tests", () => {
       expect(intern.school).toBe(school);
     });
 
-    test('getRole() should return Engineer', () => {
+    test('getRole() should return Intern', () => {
         expect(intern.getRole()).toBe("Intern");
     });
 

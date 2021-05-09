@@ -9,10 +9,10 @@ const engineerTests = [
 // new Engineer("Pam Beesly", 1736, "pbeesly@dundermifflin.com", "pbdundermifflin")
 
 const Engineer = require("../lib/Engineer");
-const name = "Pam Beesly";
+const name = "Pam";
 const id = 1736;
-const email = "pbeesly@dundermifflin.com";
-const github = "pbdundermifflin";
+const email = "pam@bigco.com";
+const github = "pambeesly";
 const engineer = new Engineer(name, id, email, github);
 
 describe("Engineer tests", () => {
