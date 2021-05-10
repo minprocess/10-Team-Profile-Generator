@@ -141,7 +141,7 @@ function init(role, questions) {
         .prompt(questions)
         .then(data => {
             if (role == 'Manager') {
-                manager = new Manager(data.name, data.id, data.email, data.officeNumber);
+                manager = new Manager(data.name, data.id, data.email, data.officenumber);
             }
             else if (role == 'Engineer') {
                 engineers.push(new Engineer(data.name, data.id, data.email, data.github));
@@ -161,7 +161,6 @@ function init(role, questions) {
             }
             else {
                 // html creation here
-                console.log("********* calling GenIndex ************");
                 genTeamPage(manager, engineers, interns);
             }
         })

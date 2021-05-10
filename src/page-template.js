@@ -9,14 +9,12 @@ function genTeamPage(manager, engineers, interns) {
 
 //<i class="fas fa-mug-hot"></i>
 
-let jumbotron =
+let jumbotron = 
 `
-<div class="container-fluid">
-<div class="row">
-  <div class="col-12 jumbotron mb-3">
-    <h1 class="text-center">My Team</h1>
+<div class="p-4 mb-4 rounded-3" style="background-color:pink">
+  <div class="container-fluid py-4">
+    <h1 class="display-4 fw-bold text-center">My Team</h1>
   </div>
-</div>
 </div>
 `
 
@@ -25,7 +23,7 @@ let jumbotron =
 <div class="card">
   <div class="card-header">
     <h2 class="card-title">${manager.name}</h2>
-    <h3 class="card-title">Manager</h3>
+    <i class="fas fa-mug-hot"></i><h3 class="card-title" style="display:inline-block;">Manager</h3>
   </div>
 
   <div class="card-body">
@@ -86,23 +84,7 @@ for (i=0; i<interns.length; i++) {
     </div>
   </div>
   `
-  /*
-  `
-  <div class="col-md-4">
-    <div class="card mb-3" style="max-width: 18rem;">
-      <div class="card-header text-white bg-primary ">
-        <h4 class="card-title">${interns[i].name}</h4>
-        <h5 class="card-title fas fa-mug-hot">Engineer</h5>
-      </div>
-      <div class="card-body bg-white text-black">
-        <p class="card-text">ID: ${interns[i].id}</p>
-        <p class="card-text">Email: ${interns[i].email}</p>
-        <p class="card-text">GitHub: ${interns[i].school}</p>
 
-      </div>
-    </div>
-  </div>
-  `*/
   }
   
 
@@ -116,8 +98,13 @@ for (i=0; i<interns.length; i++) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Dev Team!</title>
   </head>
   <body>
