@@ -1,10 +1,10 @@
 # 10-Team-Profile-Generator
 ## Description
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This app is a Node.js command-line application that a user questions about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. There are unit tests for every part of the code.
+
+A walkthrough video is provided that demonstrates functionality and that all of the tests pass.
+
+The npm inquirer package is used to ask the questions. The npm Jest 
 ## Table of Contents (Optional)
 If your README is long, add a table of contents to make it easy for users to find what they need.
 - [Installation](#installation)
@@ -26,9 +26,10 @@ The link to a mp4 showing the user answering questions about the the is here
 ![Video showing the answer to questions, the testing with Jest and the My team web page] ()
 The file team.html is output to the folder 'dist'.
 
-![Web page](assets/images/screencapture-team.html.png)
+![Web page](./assets/images/screencapture-team.html.png)
 
-
+## Links
+https://github.com/minprocess/10-Team-Profile-Generator
 
 ## Credits
 

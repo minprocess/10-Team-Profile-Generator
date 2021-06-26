@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "node": "npm run node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,5 @@
   "homepage": "https://github.com/minprocess/10-Team-Profile-Generator#readme",
   "dependencies": {
     "inquirer": "^8.0.0"
-  },
-  "devDependencies": {
-    "jest": "^26.6.3"
   }
 }
